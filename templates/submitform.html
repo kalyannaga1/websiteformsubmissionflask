@@ -6,10 +6,16 @@
             height: 100vh;
             margin: 0;
             background-size: cover;
-            background-image: linear-gradient(to right, blue, white);
+            background-image: linear-gradient(to bottom, lightblue, white);
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+        h2 {
+            position: fixed;
+            top: 20px;  /* adjust this as per your requirement */
+            left: 50%;  /* adjust this as per your requirement */
+            transform: translate(-50%, -50%);
         }
 
         form {
@@ -48,7 +54,9 @@
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname"><br>
   <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname"><br><br>
+  <input type="text" id="lname" name="lname"><br>
+  <label for="email">Email:</label><br>  <!-- Added this line -->
+  <input type="text" id="email" name="email"><br><br>  <!-- Added this line -->
   <input type="submit" value="Submit">
 </form>
 
