@@ -8,7 +8,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = "mssql+pyodbc:///?odbc_connect=%s" % par
 db = SQLAlchemy(app)
 
 class User(db.Model):
-    __tablename__ = "UsersV1"
+    __tablename__ = "Users"
 
     fName = db.Column(db.String, primary_key=True)
     lName = db.Column(db.String)  # Added this line
