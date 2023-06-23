@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 from flask_sqlalchemy import SQLAlchemy
 import urllib
 
-params = urllib.parse.quote_plus("DRIVER={ODBC Driver 17 for SQL Server};SERVER=formsubmissionserver.database.windows.net;DATABASE=Formsubmission;UID=kalyan;PWD=qwertynaga@1")
+params = urllib.parse.quote_plus("DRIVER={ODBC Driver 17 for SQL Server};SERVER=formsubmissionserver1.database.windows.net;DATABASE=formsubmissionserver1;UID=kalyan;PWD=qwertynaga@1")
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "mssql+pyodbc:///?odbc_connect=%s" % params
 db = SQLAlchemy(app)
